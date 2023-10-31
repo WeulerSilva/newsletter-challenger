@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #36384d;
+  overflow-y: hidden;
+  
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.my-formulary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 60vw;
+  height: 60vh;
+  border-radius: 5%;
+}
+
+.subscrib {
+  width: 58%;
+  height: 93%;
+  padding: 44px 43px 0px;
+}
+
+.subscrib h1 {
+  font-size: 57px;
+  color: hsl(234, 29%, 20%);
+}
+
+.subscrib p {
+  font-size: 16px;
+  margin: 10px 0px;
+}
+
+.subscrib span {
+  padding-top: 10px;
+  line-height: 30px;
+}
+
+.subscrib span img {
+  position: relative;
+  top: 5px;
+  margin-right: 15px;
+}
+
+.image {
+  display: flex;
+  background-color: orange;
+  width: 38%;
+  height: 93%;
+}
+
+.image-design {
+  width: 100%;
+  background-image: url(../images/illustration-sign-up-desktop.svg);
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin-top: 20px;
+}
+
+.email-erro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.erro {
+  display: none;
+  font-size: 12px;
+  font-weight: bolder;
+  color: #ff527b;
+}
+
+fieldset label {
+  position: relative;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+fieldset input {
+  margin: 10px 0px;
+  height: 50px;
+  border:1px solid grey;
+  color: grey;
+  padding-left: 25px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+fieldset input:focus {
+  border: 1px solid rgb(35 39 66);
+  color: rgb(35 39 66);
+  box-shadow: none;
+  outline: none;
+}
+
+#button {
+  background-color: rgb(35 39 66);
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#button:hover {
+  border: none;
+  background: linear-gradient(to right, #ff527b, #ff6939);
+  box-shadow: 0 3px 15px #ff527b, 0 3px 15px #ff6939;
+}
+
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 30vw;
+  height: 52vh;
+  border-radius: 5%;
+}
+
+.email-sucess {
+  display: none;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 30px 50px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.email-sucess img {
+  width: 60px;
+}S
+
+.email-user {
+  font-weight: 600;
+}
+
+.email-sucess h1 {
+  font-size: 50px;
+  font-weight: bolder;
+  line-height: 50px;
+  margin: 30px 0px 20px;
+  color: rgb(35 39 66);
+}
+
+#butt {
+  margin: 30px 0px;
+  height: 50px;
+  border:1px solid grey;
+  color: grey;
+  padding-left: 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: rgb(35 39 66);
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#butt:hover {
+  border: none;
+  background: linear-gradient(to right, #ff527b, #ff6939);
+  box-shadow: 0 3px 15px #ff527b, 0 3px 15px #ff6939;
+}
+
+.email-user {
+  font-weight: 700;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+  color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 1250px) {
+  .subscrib {
+    padding: 0px 20px 0px;
+  }
+  .subscrib span {
+    line-height: 10px;
+  }
+}
+
+@media (max-width: 770px) {
+  .subscrib h1 {
+    font-size: 35px;
+  }
+  .my-formulary {
+    justify-content: space-between;
+  }
+  .image {
+    width: 20%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .new {
+    width: 50vw;
+    height: 55vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .new {
+    width: 60vw;
+    height: 65vh;
+  }
+  #butt {
+    margin: 100px 0px 0px;
+  }
+}
+
+@media (max-width: 570px) {
+  .my-formulary {
+    flex-direction: column-reverse;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+  }
+  .image {
+    width: 100%;
+    height: 80%;
+    background-color: white;
+  }
+  .image-design {
+    background-image: url(../images/illustration-sign-up-mobile.svg);
+    border-radius: 0px 0px 7% 7%;
+  }
+  .subscrib {
+    width: 84%;
+    padding: 30px 0px 0px;
+  }
+  .new {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+  }
+  .email-sucess {
+    justify-content: center;
+  }
+  #butt {
+    margin: 330px 0px 0px;
+    height: 55px;
+    font-size: 17px;
+  }
+  .email-sucess h1 {
+    font-size: 41px;
+  }
+}
+
+@media (max-width: 440px) {
+  .image {
+    height: 50%;
+  }
+  .subscrib p {
+    font-size: 18px;
+    margin: 20px 0px;
+  }
+  .subscrib h1 {
+    font-size: 45px;
+  }
+  .subscrib span {
+    line-height: 30px;
+    font-size: 18px;
+  }
+  fieldset {
+    margin-top: 40px;
+  }
+  fieldset input {
+    height: 55px;
+  }
+  #button {
+    font-size: 18px;
+  }
+}
